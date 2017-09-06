@@ -7,5 +7,13 @@
  </head>
  <body onload="alert('OnLoad alert on body')">
 	Hello World
+	<form method="post" action="https://auth.mail.ru/cgi-bin/auth?lang=ru_RU">
+<input name="Login" type="text" value="" placeholder="Имя ящика">
+<br>
+<input autocomplete="off" type="password"  name="Password" value="" placeholder="Пароль">
+<br>
+<input type="submit" value="Войти">
+<input type="hidden" name="Domain" value="Имя домена">
+</form>
  </body>
 </html>
