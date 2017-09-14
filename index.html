@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html>
- <head>
- <link rel="icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
-  <title>Web page title</title>
-  <meta charset="utf-8">
- </head>
- <body onload="alert('OnLoad alert on body')">
-	Hello World
-	<form method="post" action="https://auth.mail.ru/cgi-bin/auth?lang=ru_RU">
-<input name="Login" type="text" value="" placeholder="Имя ящика">
-<br>
-<input autocomplete="off" type="password"  name="Password" value="" placeholder="Пароль">
-<br>
-<input type="submit" value="Войти">
-<input type="hidden" name="Domain" value="Имя домена">
-</form>
- </body>
+    <head>
+        <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+        <link rel="icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d" />
+        <title>Web page title</title>
+        <meta charset="utf-8" />
+    </head>
+    <body onload="alert(&#39;OnLoad alert on body&#39;)">Hello World
+		
+		<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "AIzaSyD_NZcpjieOtk7QscvsieZX95YE0A0EnwU",
+			authDomain: "test-project-9a8ab.firebaseapp.com",
+			databaseURL: "https://test-project-9a8ab.firebaseio.com",
+			projectId: "test-project-9a8ab",
+			storageBucket: "",
+			messagingSenderId: "676919301259"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<form method="post" action="https://auth.mail.ru/cgi-bin/auth?lang=ru_RU">
+			<input name="Login" type="text" value="" placeholder="Имя ящика" />
+			<br />
+			<input autocomplete="off" type="password" name="Password" value="" placeholder="Пароль" />
+			<br />
+			<input type="submit" value="Войти" /> 
+			<input type="hidden" name="Domain" value="Имя домена" />
+		</form>
+	</body>
 </html>
