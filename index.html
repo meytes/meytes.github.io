@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
-        <link rel="icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d" />
         <title>Web page title</title>
         <meta charset="utf-8" />
+        <link rel="icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d" />
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+
     </head>
-    <body onload="alert(&#39;OnLoad alert on body&#39;)">Hello World
-		
+    <!--onload="alert(&#39;OnLoad alert on body&#39;)"-->
+    <body>
 		<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
 		<script>
 		  // Initialize Firebase
@@ -22,12 +24,14 @@
 		  firebase.initializeApp(config);
 		</script>
 		<form method="post" action="https://auth.mail.ru/cgi-bin/auth?lang=ru_RU">
-			<input name="Login" type="text" value="" placeholder="Имя ящика" />
-			<br />
-			<input autocomplete="off" type="password" name="Password" value="" placeholder="Пароль" />
-			<br />
-			<input type="submit" value="Войти" /> 
-			<input type="hidden" name="Domain" value="Имя домена" />
+            <div>
+                <input name="Login" type="text" value="" placeholder="Имя ящика (user@meytes.ru)" />
+                <br />
+                <input autocomplete="off" type="password" name="Password" value="" placeholder="Пароль" />
+                <br />
+                <input type="submit" value="Войти" />
+                <input type="hidden" name="Domain" value="Имя домена" />
+            </div>
 		</form>
 	</body>
 </html>
