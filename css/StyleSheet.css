@@ -32,6 +32,47 @@ canvas{
   vertical-align:bottom;
 }
 
+.animation {
+    position: relative;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+.animation__eye {
+    position: absolute;
+    display: none;
+    width: 6px;
+    height: 5px;
+    background-image: url("../img/eye.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0;
+}
+
+.animation__eye--one-one {
+    left: 58px;
+    top: 107px;
+}
+
+.animation__eye--one-two {
+    left: 104px;
+    top: 108px;
+}
+
+.animation__eye--two-one {
+    left: 250px;
+    top: 164px;
+}
+
+.animation__eye--two-two {
+    left: 296px;
+    top: 164px;
+}
+
+.animation__video {
+    display: none;
+    opacity: 0;
+}
 
 /* ---- stats.js ---- */
 
@@ -119,9 +160,9 @@ input[type=submit] {
 #divform {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     position: fixed;
-    top: 33%;
+    top: 13%;
     left: 33%;
-    width: 33%;
+    width: 385px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
