@@ -34,7 +34,7 @@
 
         animation.style.maxHeight = '374px';
         animationVideo.style.display = 'block';
-        fadeIn(animationVideo, 2000);
+        //fadeIn(animationVideo, 2000);
         //fadeIn(about, 2000);
         animationVideo.play();
 
@@ -153,8 +153,6 @@
 
     function clickHandler() {
         var wrapper = document.querySelector('.wrapper');
-        inputPassword.type = 'text';
-        fadeOut(wrapper, 1000);
     }
 
     function setPosition(person, xLeft, yLeft, xRight, yRight) {
